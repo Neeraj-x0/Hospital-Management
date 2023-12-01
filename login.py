@@ -95,7 +95,7 @@ class LoginFrame(Frame):
         admin_data = c.fetchone()
 
         if admin_data is not None:
-            # Assuming hashed password is stored in the second column
+            # Assuming password is stored in the second column
             admin_password = admin_data[2]
 
             # Verify the entered password
